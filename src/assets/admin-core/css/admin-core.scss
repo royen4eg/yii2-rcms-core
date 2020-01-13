@@ -1,0 +1,27 @@
+$chillBg: #1e2229;
+
+html, body {
+  height: 100%;
+}
+
+.wrap {
+  height: 100vh;
+
+  .theme {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 4px;
+    margin: 2px;
+  }
+
+  .theme.chiller-theme {
+    background: $chillBg;
+  }
+}
+
+form .form-group.required > label:after {
+  content: ' *';
+  color: red;
+  font-weight: bold;
+}

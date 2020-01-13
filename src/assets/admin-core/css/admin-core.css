@@ -1,0 +1,20 @@
+html, body {
+  height: 100%; }
+
+.wrap {
+  height: 100vh; }
+  .wrap .theme {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 4px;
+    margin: 2px; }
+  .wrap .theme.chiller-theme {
+    background: #1e2229; }
+
+form .form-group.required > label:after {
+  content: ' *';
+  color: red;
+  font-weight: bold; }
+
+/*# sourceMappingURL=admin-core.css.map */

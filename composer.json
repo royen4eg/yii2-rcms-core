@@ -1,0 +1,30 @@
+{
+    "name": "royen/yii2-rcms-core",
+    "description": "Core module of Royen's CMS project based on Yii2 framework",
+    "type": "yii2-project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrii Borodin",
+            "email": "andry.royen@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://github.com/royen4eg/yii2-rcms-core/issues",
+        "source": "https://github.com/royen4eg/yii2-rcms-core"
+    },
+    "require": {
+        "php": ">=7.2.0",
+        "yiisoft/yii2": "~2.0.11",
+        "yiisoft/yii2-bootstrap4": "^2.0",
+        "bower-asset/codemirror": "*",
+        "bower-asset/summernote": "*",
+        "bower-asset/jsoneditor": "5.24.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "rcms\\core\\": "src"
+        }
+    }
+}
