@@ -26,5 +26,8 @@
         "psr-4": {
             "rcms\\core\\": "src/"
         }
+    },
+    "extra": {
+        "class": "rcms\\core\\Module"
     }
 }
