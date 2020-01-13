@@ -27,9 +27,9 @@ use yii\web\IdentityInterface;
  */
 class Module extends \yii\base\Module implements BootstrapInterface
 {
-    const BASE_PATH = __DIR__ . '/..';
+    const BASE_PATH = __DIR__;
 
-    const BASE_ALIAS = '@rcms';
+    const BASE_ALIAS = '@rcms/core';
 
     const RCMS_PARAM_NAME = 'rcmsCoreModuleId';
 
@@ -42,7 +42,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
     const DB_COMPONENT = 'rcmsDb';
 
     /** @var array */
-    public $migrationPath = [self::BASE_ALIAS . '/core/migrations'];
+    public $migrationPath = [self::BASE_ALIAS . '/migrations'];
 
     /** @var array of modules installed for rcms */
     public static $availableModules = [];
