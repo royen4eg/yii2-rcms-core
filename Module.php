@@ -231,12 +231,12 @@ class Module extends \yii\base\Module implements BootstrapInterface
                 $tgtFile = $projectDir . '/' . $dir . '/Module.php';
                 if(file_exists($tgtFile)){
                     $content = file_get_contents($tgtFile);
-                    if (preg_match('/^namespace\s+(.+?);/sm', $content, $m)) {
-                        $tgtClass = $m[1] . '\Module';
+                    if (preg_match('/^namespace\s+rcms\\\(\w+?);/sm', $content, $m)) {
+                        $tgtClass = substr_replace($currentClass, $m[1], $pos, 4);
                     }
                 }
                 if (!empty($tgtClass) && class_exists($tgtClass) && defined("$tgtClass::MODULE_NAME")) {
-                    self::$availableModules[$dir] = [
+                    self::$availableModules[$m[1]] = [
                         'class' => $tgtClass,
                         'name' => $tgtClass::MODULE_NAME
                     ];
