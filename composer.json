@@ -1,8 +1,9 @@
 {
     "name": "royen4eg/yii2-rcms-core",
     "description": "Core module of Royen's CMS project based on Yii2 framework",
-    "type": "yii2-project",
-    "license": "MIT",
+    "keywords": ["yii", "yii2", "extension"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Andrii Borodin",
