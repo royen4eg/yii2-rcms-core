@@ -27,8 +27,6 @@ use yii\web\IdentityInterface;
  */
 class Module extends \yii\base\Module implements BootstrapInterface
 {
-    const BASE_PATH = __DIR__;
-
     const BASE_ALIAS = '@rcms/core';
 
     const RCMS_PARAM_NAME = 'rcmsCoreModuleId';
@@ -58,7 +56,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
     public function init()
     {
         // Apply core path as alias
-        Yii::setAlias(self::BASE_ALIAS, self::BASE_PATH);
+        Yii::setAlias(self::BASE_ALIAS, __DIR__);
 
         // Initiate translation module if not set yet
         if (!isset(Yii::$app->i18n->translations['rcms*'])) {
