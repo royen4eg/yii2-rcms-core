@@ -105,6 +105,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
             $app->on(Application::EVENT_AFTER_ACTION, [$this, 'populateDictionary']);
 
         } elseif ($app instanceof \yii\console\Application) {
+            $this->controllerNamespace = 'rcms\core\commands';
             foreach ($this->components as $id => $class) {
                 $component = $this->get($id);
                 if ($component instanceof BootstrapConsoleInterface) {
@@ -199,7 +200,14 @@ class Module extends \yii\base\Module implements BootstrapInterface
     protected function setUserModule(Application $app)
     {
         if ($this->settings->useRcmsUser) {
-            $app->get('user')->identityClass = User::class;
+            if($app->has('user')) {
+                $app->get('user')->identityClass = User::class;
+            } else {
+                $app->set('user', [
+                    'class' => 'yii\web\User',
+                    'identityClass' => User::class
+                ]);
+            }
         }
     }
 

@@ -33,18 +33,14 @@ class MigrateController extends BaseMigrateController
 
     /**
      * @inheritdoc
-     */
-    public $migrationPath = '@rcms/core/migrations';
-
-    /**
-     * @inheritdoc
      * @throws \yii\base\InvalidConfigException
      */
     public function init()
     {
         $this->db = Instance::ensure($this->db, Connection::class);
-        $this->migrationPath = Yii::$app->modules[AdminModule::$moduleId]->migrationPath;
-
+        if($this->module instanceof Module){
+            $this->migrationPath = $this->module->migrationPath;
+        }
         parent::init();
     }
 
