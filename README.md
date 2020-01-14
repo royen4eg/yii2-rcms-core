@@ -103,4 +103,6 @@ Other modules that extends functionality of RCMS might have other tables that sh
 $ php yii rcms/migrate
 ```
 
+Migration of User table will automatically create admin record in table (analogy of default `admin/admin`)
+
 Note: Before migration it is recommended to modify table prefix in **global settings**

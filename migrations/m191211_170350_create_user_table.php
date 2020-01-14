@@ -51,7 +51,7 @@ class m191211_170350_create_user_table extends Migration
 
 
         $this->insert('{{%user}}', [
-            'user_id' => 1,
+            'user_id' => 100,
             'username' => 'admin',
             'password_hash' => Yii::$app->security->generatePasswordHash('admin'),
             'auth_key' => Yii::$app->security->generateRandomString(),

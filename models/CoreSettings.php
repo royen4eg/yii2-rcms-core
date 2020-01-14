@@ -123,6 +123,7 @@ class CoreSettings extends Model
                 . ' ' . Yii::t('rcms-core','Format details on') . ': <code>https://www.php.net/manual/en/function.date.php</code>',
             'defaultAccessRole' => Yii::t('rcms-core','This role will be used to restrict access to RCMS admin UI. '
                 . '<code>Note:</code> if you don\'t have access to this role, you won\'t be able to set it.'),
+            'useRcmsUser' => Yii::t('rcms-core','There is a risk of logout after changing')
         ];
     }
 
