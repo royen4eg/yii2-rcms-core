@@ -224,11 +224,18 @@ class Module extends \yii\base\Module implements BootstrapInterface
         $currentClass = self::class;
         $pos = strrpos($currentClass, 'core');
         if ($pos !== false) {
-            $projectDir = Yii::getAlias(self::BASE_ALIAS);
+            $projectDir = dirname(Yii::getAlias(self::BASE_ALIAS));
             $directories = array_values(array_diff(scandir($projectDir), ['.', '..']));
             foreach ($directories as $dir) {
-                $tgtClass = substr_replace($currentClass, $dir, $pos, 4);
-                if (class_exists($tgtClass) && defined("$tgtClass::MODULE_NAME")) {
+                $tgtClass = null;
+                $tgtFile = $projectDir . '/' . $dir . '/Module.php';
+                if(file_exists($tgtFile)){
+                    $content = file_get_contents($tgtFile);
+                    if (preg_match('/^namespace\s+(.+?);/sm', $content, $m)) {
+                        $tgtClass = $m[1] . '\Module';
+                    }
+                }
+                if (!empty($tgtClass) && class_exists($tgtClass) && defined("$tgtClass::MODULE_NAME")) {
                     self::$availableModules[$dir] = [
                         'class' => $tgtClass,
                         'name' => $tgtClass::MODULE_NAME
