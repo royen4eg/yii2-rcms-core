@@ -3,6 +3,12 @@ namespace rcms\core\base;
 
 use yii\data\DataProviderInterface;
 
+/**
+ * Interface SearchInterface
+ * @package rcms\core\base
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 interface SearchInterface
 {
     /**

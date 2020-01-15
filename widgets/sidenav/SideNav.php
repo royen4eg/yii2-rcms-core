@@ -8,6 +8,12 @@ use Yii;
 use yii\helpers\Url;
 use yii\web\IdentityInterface;
 
+/**
+ * Class SideNav
+ * @package rcms\core\widgets\sidenav
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class SideNav extends Widget
 {
     const POS_LEFT = 'left';

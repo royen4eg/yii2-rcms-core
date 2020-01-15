@@ -8,6 +8,12 @@ use rcms\core\base\BaseAdminController;
 use rcms\core\models\Dictionary;
 use Yii;
 
+/**
+ * Class DictionaryController
+ * @package rcms\core\controllers
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class DictionaryController extends BaseAdminController
 {
     public $availableActions = [

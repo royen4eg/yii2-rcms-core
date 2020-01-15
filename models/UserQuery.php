@@ -4,6 +4,8 @@ namespace rcms\core\models;
 
 /**
  * This is the ActiveQuery class for [[User]].
+ * @author Andrii Borodin
+ * @since 0.1
  *
  * @see User
  */

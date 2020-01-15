@@ -12,6 +12,8 @@ use yii\helpers\FileHelper;
 /***
  * Class UserSettings
  * @package rcms\core\components
+ * @author Andrii Borodin
+ * @since 0.1
  *
  * @property array $data
  */

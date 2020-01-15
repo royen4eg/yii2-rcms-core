@@ -12,6 +12,14 @@ use yii\base\InvalidConfigException;
 use Symfony\Component\DomCrawler\Crawler;
 use yii\bootstrap4\Widget;
 
+/**
+ * Class DynamicFormWidget
+ * @package rcms\core\widgets\dynamicform
+ * Original from https://github.com/wbraganca/yii2-dynamicform
+ *
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class DynamicFormWidget extends Widget
 {
     const WIDGET_ALIAS = 'dynamicform';

@@ -3,8 +3,12 @@
 use rcms\core\migrations\Migration;
 use rcms\core\models\User;
 
+
 /**
+ * Class m191211_170350_create_user_table
  * Handles the creation of table `{{%user}}`.
+ * @author Andrii Borodin
+ * @since 0.1
  */
 class m191211_170350_create_user_table extends Migration
 {

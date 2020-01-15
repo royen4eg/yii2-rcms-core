@@ -10,6 +10,8 @@ use yii\helpers\FileHelper;
 /**
  * Class CoreSettings
  * @package rcms\core\models
+ * @author Andrii Borodin
+ * @since 0.1
  */
 class CoreSettings extends Model
 {

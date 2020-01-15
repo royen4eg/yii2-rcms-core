@@ -9,6 +9,8 @@ use rcms\core\base\BaseAdminController;
 /**
  * Class DefaultController
  * @package rcms\core\controllers
+ * @author Andrii Borodin
+ * @since 0.1
  *
  * @property AdminModule $module
  */

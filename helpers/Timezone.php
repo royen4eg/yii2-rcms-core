@@ -2,6 +2,12 @@
 
 namespace rcms\core\helpers;
 
+/**
+ * Class Timezone
+ * @package rcms\core\helpers
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class Timezone
 {
     const TIMEZONES = [

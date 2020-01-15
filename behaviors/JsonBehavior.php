@@ -7,6 +7,12 @@ use yii\base\Event;
 use yii\db\ActiveRecord;
 use yii\helpers\Json;
 
+/**
+ * Class JsonBehavior
+ * @package rcms\core\behaviors
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class JsonBehavior extends Behavior
 {
     const ACTION_FIND = 'onAfterFind';

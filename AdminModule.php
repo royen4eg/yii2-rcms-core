@@ -7,6 +7,12 @@ use yii\base\Application;
 use yii\base\BootstrapInterface;
 use yii\helpers\Url;
 
+/**
+ * Class AdminModule
+ * @package rcms\core
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class AdminModule extends Module implements BootstrapInterface
 {
     const RCMS_PARAM_NAME = 'rcmsAdminModuleId';

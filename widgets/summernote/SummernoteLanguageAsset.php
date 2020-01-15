@@ -4,6 +4,12 @@ namespace rcms\core\widgets\summernote;
 
 use rcms\core\base\BaseAssetBundle;
 
+/**
+ * Class SummernoteLanguageAsset
+ * @package rcms\core\widgets\summernote
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class SummernoteLanguageAsset extends BaseAssetBundle
 {
     /** @var string */

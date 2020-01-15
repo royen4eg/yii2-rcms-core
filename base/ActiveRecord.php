@@ -7,6 +7,14 @@ use Yii;
 use yii\base\InvalidConfigException;
 use yii\db\Connection;
 
+/**
+ * Class ActiveRecord
+ * @package rcms\core\base
+ *
+ *
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class ActiveRecord extends \yii\db\ActiveRecord
 {
 

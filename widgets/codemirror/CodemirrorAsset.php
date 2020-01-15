@@ -5,6 +5,12 @@ use yii\helpers\ArrayHelper;
 use yii\web\AssetBundle;
 use yii\web\View;
 
+/**
+ * Class CodemirrorAsset
+ * @package rcms\core\widgets\codemirror
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class CodemirrorAsset extends AssetBundle
 {
     const THEME_3024_DAY = 'THEME_3024_DAY';

@@ -6,6 +6,12 @@ namespace rcms\core\components;
 use Yii;
 use yii\helpers\Html;
 
+/**
+ * Class ActionColumn
+ * @package rcms\core\components
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class ActionColumn extends \yii\grid\ActionColumn
 {
     public $filter;

@@ -9,7 +9,7 @@ use yii\web\YiiAsset;
  * Core RCMS asset bundle
  *
  * @author Andrii Borodin
- * @since 1.0
+ * @since 0.1
  */
 class AdminCoreAssets extends AssetBundle
 {

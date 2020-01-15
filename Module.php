@@ -18,6 +18,8 @@ use yii\web\IdentityInterface;
 /**
  * Class Module
  * @package modules\rcms\core
+ * @author Andrii Borodin
+ * @since 0.1
  *
  * @property SessionAlerts $alerts
  * @property LanguageSelector $languageSelector

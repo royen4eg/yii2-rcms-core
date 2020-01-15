@@ -8,6 +8,12 @@ use yii\base\BootstrapInterface;
 use yii\base\Component;
 use Yii;
 
+/**
+ * Class LanguageSelector
+ * @package rcms\core\components
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class LanguageSelector extends Component implements BootstrapInterface
 {
     public function __construct($config = [])

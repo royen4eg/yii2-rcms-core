@@ -5,6 +5,12 @@ use Yii;
 use yii\base\Component;
 use yii\bootstrap4\Alert;
 
+/**
+ * Class SessionAlerts
+ * @package rcms\core\components
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class SessionAlerts extends Component
 {
     const CATEGORIES = [

@@ -2,10 +2,15 @@
 
 namespace rcms\core\widgets;
 
-
 use yii\bootstrap4\Widget;
 use yii\helpers\Html;
 
+/**
+ * Class ControlPanel
+ * @package rcms\core\widgets
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class ControlPanel extends Widget
 {
 

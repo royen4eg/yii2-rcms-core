@@ -7,6 +7,12 @@ use rcms\core\models\Dictionary;
 use Yii;
 use yii\i18n\PhpMessageSource;
 
+/**
+ * Class JsonMessageSource
+ * @package rcms\core\components
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class JsonMessageSource extends PhpMessageSource
 {
     public $basePath = '@rcms/core/messages';

@@ -1,7 +1,6 @@
 <?php
 namespace rcms\core\commands;
 
-use rcms\core\AdminModule;
 use rcms\core\Module;
 use Yii;
 use yii\console\controllers\BaseMigrateController;
@@ -13,6 +12,8 @@ use yii\helpers\Console;
 /**
  * Class MigrateController
  * @package rcms\core\commands
+ * @author Andrii Borodin
+ * @since 0.1
  */
 class MigrateController extends BaseMigrateController
 {

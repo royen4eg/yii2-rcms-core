@@ -10,6 +10,9 @@ use Yii;
 /**
  * Class GlobalSettingsController
  * @package rcms\core\controllers
+ * @author Andrii Borodin
+ * @since 0.1
+ *
  * @property AdminModule $module
  */
 class GlobalSettingsController extends BaseAdminController

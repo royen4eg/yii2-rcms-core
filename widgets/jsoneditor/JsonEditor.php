@@ -12,6 +12,9 @@ use yii\widgets\InputWidget;
  * Class JsonEditor
  * @package rcms\core\widgets\jsoneditor
  * Inspired by @package dmitry-kulikov/yii2-json-editor
+ *
+ * @author Andrii Borodin
+ * @since 0.1
  */
 
 class JsonEditor extends InputWidget

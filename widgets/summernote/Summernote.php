@@ -8,6 +8,12 @@ use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
 
+/**
+ * Class Summernote
+ * @package rcms\core\widgets\summernote
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class Summernote extends InputWidget
 {
     /** @var array */

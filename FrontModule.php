@@ -5,6 +5,12 @@ use Yii;
 use yii\base\Application;
 use yii\base\BootstrapInterface;
 
+/**
+ * Class FrontModule
+ * @package rcms\core
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class FrontModule extends Module implements BootstrapInterface
 {
     const RCMS_PARAM_NAME = 'rcmsFrontModuleId';

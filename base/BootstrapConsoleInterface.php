@@ -6,6 +6,12 @@ namespace rcms\core\base;
 
 use yii\console\Application;
 
+/**
+ * Interface BootstrapConsoleInterface
+ * @package rcms\core\base
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 interface BootstrapConsoleInterface
 {
     /**

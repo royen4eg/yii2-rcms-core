@@ -8,6 +8,12 @@ use yii\helpers\FileHelper;
 use yii\helpers\Url;
 use yii\i18n\MessageSource;
 
+/**
+ * Class Dictionary
+ * @package rcms\core\models
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class Dictionary extends Model
 {
     const LANG_FILE_MASK = "return [:data];";

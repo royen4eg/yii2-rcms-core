@@ -9,6 +9,8 @@ use yii\web\IdentityInterface;
 
 /**
  * This is the model class for table "{{%user}}".
+ * @author Andrii Borodin
+ * @since 0.1
  *
  * @property int $user_id
  * @property string $username

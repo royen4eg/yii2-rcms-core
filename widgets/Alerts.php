@@ -20,8 +20,10 @@ use yii\helpers\Html;
  * Yii::$app->session->setFlash('error', ['Error 1', 'Error 2']);
  * ```
  *
- * @author Kartik Visweswaran <kartikv2@gmail.com>
- * @author Alexander Makarov <sam@rmcreative.ru>
+ * Original by Kartik Visweswaran <kartikv2@gmail.com> and Alexander Makarov <sam@rmcreative.ru>
+ *
+ * @author Andrii Borodin
+ * @since 0.1
  */
 class Alerts extends \yii\bootstrap4\Widget
 {

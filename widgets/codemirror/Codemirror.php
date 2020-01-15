@@ -5,6 +5,12 @@ use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
 
+/**
+ * Class Codemirror
+ * @package rcms\core\widgets\codemirror
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class Codemirror extends InputWidget
 {
 

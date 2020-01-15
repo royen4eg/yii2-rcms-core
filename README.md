@@ -13,6 +13,10 @@ Please leave ideas, notes and issues to this project on official [github page](h
 It is included into requirements of other modules and will be downloaded automatically when required other components.
 
 
+#### Currently available modules:
+* [yii2-rcms-core](https://github.com/royen4eg/yii2-rcms-core)
+* [yii2-rcms-content-manager](https://github.com/royen4eg/yii2-rcms-content-manager)
+
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).

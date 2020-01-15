@@ -20,6 +20,8 @@ use yii\web\Response;
 /**
  * Class BaseAdminController
  * @package modules\rcms\core\base
+ * @author Andrii Borodin
+ * @since 0.1
  *
  * @property Model|SearchInterface|ActiveRecordInterface $modelObject
  * @property SearchInterface $modelSearch

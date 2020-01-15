@@ -5,6 +5,12 @@ namespace rcms\core\widgets\flagicon;
 use yii\bootstrap4\Widget;
 use yii\helpers\Html;
 
+/**
+ * Class FlagIcon
+ * @package rcms\core\widgets\flagicon
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 class FlagIcon extends Widget
 {
     /* @var string */

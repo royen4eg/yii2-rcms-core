@@ -7,6 +7,12 @@ namespace rcms\core\base;
 use yii\base\Model;
 use yii\data\DataProviderInterface;
 
+/**
+ * Class BaseSearchModel
+ * @package rcms\core\base
+ * @author Andrii Borodin
+ * @since 0.1
+ */
 abstract class BaseSearchModel extends Model implements SearchInterface
 {
 
