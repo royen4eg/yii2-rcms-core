@@ -38,10 +38,7 @@ class LanguageSelector extends Component implements BootstrapInterface
     {
         if (isset($app->session['rcmsLang'])) {
             //Restore language, saved in session
-//            $app->sourceLanguage =
-            $app->language =
-//            $app->formatter->locale =
-                    $app->session['rcmsLang'];
+            $app->language = $app->session['rcmsLang'];
 
         } else {
             // detect language by browser headers

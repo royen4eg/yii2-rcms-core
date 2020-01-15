@@ -26,8 +26,4 @@ class DefaultController extends BaseAdminController
         return $this->render('index');
     }
 
-    public function actionStream($action, $params)
-    {
-
-    }
 }

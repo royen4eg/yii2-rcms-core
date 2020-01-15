@@ -159,7 +159,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
     protected function activateModules(Application $app)
     {
         $activeModules = $this->settings->activeModules;
-        if (empty($activeModules) || !is_array($activeModules)){
+        if (empty($activeModules) || !is_array($activeModules)) {
             return;
         }
         foreach (self::$availableModules as $moduleId => $module) {
@@ -176,7 +176,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
     protected function activateConsoleModules(\yii\console\Application $app)
     {
         $activeModules = $this->settings->activeModules;
-        if (empty($activeModules) || !is_array($activeModules)){
+        if (empty($activeModules) || !is_array($activeModules)) {
             return;
         }
         foreach (self::$availableModules as $moduleId => $module) {
@@ -200,7 +200,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
     protected function setUserModule(Application $app)
     {
         if ($this->settings->useRcmsUser) {
-            if($app->has('user')) {
+            if ($app->has('user')) {
                 $app->get('user')->identityClass = User::class;
             } else {
                 $app->set('user', [
@@ -218,7 +218,9 @@ class Module extends \yii\base\Module implements BootstrapInterface
                 $app->formatter->$format = 'php:' . $this->settings->$format;
             }
         }
-        $app->timeZone = $app->formatter->timeZone = $this->settings->timeZone;
+        if (isset($this->settings->timeZone)) {
+            $app->timeZone = $app->formatter->timeZone = $this->settings->timeZone;
+        }
     }
 
     private function scanModules()
@@ -231,7 +233,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
             foreach ($directories as $dir) {
                 $tgtClass = null;
                 $tgtFile = $projectDir . '/' . $dir . '/Module.php';
-                if(file_exists($tgtFile)){
+                if (file_exists($tgtFile)) {
                     $content = file_get_contents($tgtFile);
                     if (preg_match('/^namespace\s+rcms\\\(\w+?);/sm', $content, $m)) {
                         $tgtClass = substr_replace($currentClass, $m[1], $pos, 4);

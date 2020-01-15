@@ -43,7 +43,7 @@ class ActionColumn extends \yii\grid\ActionColumn
     protected function initDefaultButton($name, $iconName, $additionalOptions = [])
     {
         if (!isset($this->buttons[$name]) && strpos($this->template, '{' . $name . '}') !== false) {
-            $this->buttons[$name] = function ($url, $model, $key) use ($name, $iconName, $additionalOptions) {
+            $this->buttons[$name] = function ($url) use ($name, $iconName, $additionalOptions) {
                 switch ($name) {
                     case 'view':
                         $title = Yii::t('yii', 'View');
